@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1", 
+        "firstName": "Ashley", 
+        "lastName": "Kim", 
+        "guardianName": "Chester", 
+        "dob": "04/10/1996",
+        "addressStreet": "1234 Candy Lane",
+        "addressCity": "Atlanta"
+        
+    }
+]

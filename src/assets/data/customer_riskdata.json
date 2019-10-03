@@ -1,0 +1,12 @@
+[
+	{
+		"id": "5", 
+		"caseNum": "70591", 
+		"existingCcRecord": "great", 
+		"debtOverIncome": "69157.0", 
+		"paymentOverIncome": "84375.0", 
+		"probabilityToDefault": "56689.0", 
+		"riskFactor": "50415.0"
+	}
+	]
+    

@@ -3,21 +3,8 @@ import { EmployeeService } from '../employee.service';
 
 @Component({
     selector: 'employment',
-    template: `
-        <ul *ngFor="let employee of employees">
-            <li>Employer: {{employee.employer}}</li>
-            <br>
-            <li>Role: {{employee.role}}</li>
-            <br>
-            <li>Duration: {{employee.duration}}</li>
-            <br>
-            <li>CTC: {{employee.ctc}}</li>
-            <br>
-            <li>Contact: {{employee.contact}}</li>
-        </ul>
-    `,
+    templateUrl: './employment.component.html',
     styles: [
-        'h2 { text-align:center; }',
         'ul { list-style-type:none; }'  
     ]
 })

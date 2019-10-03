@@ -3,17 +3,8 @@ import { EmployeeService } from '../employee.service';
 
 @Component({
     selector: 'score',
-    template: `
-        <ul *ngFor="let employee of employees">
-            <li>Quote: {{employee.quote}}</li>
-            <br>
-            <li>UW Point: {{employee.uwPointNumer}}/{{employee.uwPointDenom}}</li>
-            <br>
-            <li>FICO: {{employee.ficoScore}}</li>
-        </ul>
-    `,
+    templateUrl: './score.component.html',
     styles: [
-        'h2 { text-align:center; }',
         'ul { list-style-type:none; }'  
     ]
 })

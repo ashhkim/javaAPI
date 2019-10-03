@@ -3,21 +3,7 @@ import { EmployeeService } from '../employee.service';
 
 @Component({
     selector: 'riskAnalysis',
-    template: `
-        <ul *ngFor="let employee of employees">
-            <li>Case #: {{employee.caseNum}}</li>
-            <br>
-            <li>Existing CC Record: {{employee.existingCcRecord}}</li>
-            <br>
-            <li>Debt/Income: {{employee.debtOverIncome}}</li>
-            <br>
-            <li>Payment/Income: {{employee.paymentOverIncome}}</li>
-            <br>
-            <li>Probability to Default: {{employee.probabilityToDefault}}</li>
-            <br>
-            <li>Risk Factor: {{employee.riskFactor}}</li>
-        </ul>
-    `,
+    templateUrl: './riskAnalysis.component.html',
     styles: [
         'h2 { text-align:center; }',
         'ul { list-style-type:none; }'  

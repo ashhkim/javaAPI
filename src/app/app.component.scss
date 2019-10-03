@@ -34,17 +34,6 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
   
-   body,html{
-      margin:0px;
-      padding:0;
-  
-      width:100%;
-      height:100%;
-  
-      font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  
-      background-color: #f6f7fc;
-   }
   
   #nav-bar{
       display: flex;
@@ -75,7 +64,7 @@
       justify-content: center;
       align-items: center;
   
-      width:105px;
+      width:10rem;
       height:100%;
   
       padding: 0px 5px;
@@ -90,8 +79,8 @@
   }
   
   #logo-holder #real-logo{
-      width:65px;
-      height:65px;
+      width:75px;
+      height:75px;
   }
   
   #nav-logo{
@@ -112,7 +101,7 @@
   
   #logo-wrap-redirect p{
       text-align: center;
-      font-size: .65rem;
+      font-size: .95rem;
       text-transform: uppercase !important;
       font-weight: 600;
   }
@@ -126,7 +115,7 @@
   
   .nav-link p{
       text-align: center;
-      font-size: .65rem;
+      font-size: .75rem;
       text-transform: uppercase !important;
       font-weight: 600;
       color:#858796;
@@ -134,28 +123,29 @@
   }
   
   .nav-img-src{
-      
-      width:30px;
-      height:30px;
+    //   filter: grayscale(100%);
+      width:35px;
+      height:35px;
   }
   
   #POC-Dash{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-gap: 10px;
+      grid-gap: 35px;
       padding: 50px;
   }
   
   .detail-box{
-      border-radius: 3.5px;
+      border-radius: 2.5px;
       display:flex;
       flex-direction:column;
       align-items: center;
       justify-content: space-between;
   
-      background-color: gray;
-      color: white;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 1px 9px -2px rgba(161, 161, 161, .45);;
+      color: rgb(102, 101, 101);
   }
   
   #risk-data-wrap{
@@ -177,6 +167,22 @@
       grid-row: 2/2;
       grid-column: 3/3;
   }
-  
 
+  header{
+      height:15%;
+  }
+  
+  #Dashboard-wrap{
+      height: 85%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #POC-Dash{
+      width:80%;
+      height:80%;
+    //   height: 0%;
+  }
   

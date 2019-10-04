@@ -5,7 +5,8 @@ import { EmployeeService } from '../employee.service';
     selector: 'riskAnalysis',
     templateUrl: './riskAnalysis.component.html',
     styles: [
-        'ul { list-style-type:none; }'  
+        'ul { list-style-type:none; }',
+        'li { font-size:100%; }'  
     ]
 })
 

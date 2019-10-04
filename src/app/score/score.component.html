@@ -1,7 +1,7 @@
 
-<div id="score-ctnt-wrap">
+<div id="score-ctnt-wrap" (window:resize)="resizeGauge()">
     <div id="score-desc-wrap">
-        <p *ngFor="let x of employee_score">Take a Look at my FICO: <b>{{x.ficoScore}}</b></p>
+        <!-- <p *ngFor="let x of employee_score">Take a Look at my FICO: <b>{{x.ficoScore}}</b></p> -->
     </div>
 
     <div id="score-graph-wrap">
@@ -10,8 +10,8 @@
                 [type]="gaugeType" 
                 [value]="UWGaugeVal"
                 [label]="UWLabel"  
-                [max]="max"
-                [min]="min"
+                [max]="UWmax"
+                [min]="UWmin"
                 [cap]="cap"
                 [thick]="thickness"
                 [size]="size"
@@ -23,8 +23,8 @@
             [type]="gaugeType" 
             [value]="FICOGaugeVal"
             [label]="FICOLabel"  
-            [max]="max"
-            [min]="min"
+            [max]="FICOmax"
+            [min]="FICOmin"
             [cap]="cap"
             [size]="size"
             [thick]="thickness"

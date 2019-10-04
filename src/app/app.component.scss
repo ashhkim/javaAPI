@@ -171,13 +171,24 @@
       height:35px;
   }
   
+//   @keyframes curtain {
+//     0% {
+//       grid-gap: 100vw; 
+//     }
+    
+//     100% {
+//       grid-gap: 20px;
+//     }
+//   }
+  
   #POC-Dash{
+    //   animation: 10s curtain cubic-bezier(.86,0,.07,1) 0.4s both;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
 
-      grid-gap: 20px;
-      padding: 15px;
+      grid-gap: 30px;
+      padding: 20px;
   }
 
   #POC-Dash > .detail-box:nth-child(2){
@@ -236,7 +247,7 @@
   }
 
   .title-wrap{
-      font-size: .9rem;
+      font-size: 1rem;
     //   text-transform: uppercase;
       color: #838f9c !important;
 
@@ -249,6 +260,9 @@
       color: white;
   }
 
+  .risk-data-sect-details{
+    height:100%;
+    }
 
   .section-title{
     font-weight: 600 !important;

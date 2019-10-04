@@ -1,20 +1,45 @@
 
-<p *ngFor="let x of employee_score">Take a Look at my FICO: <b>{{x.ficoScore}}</b></p>
-<div>
-    <div>
-        <img src="./assets/images/graph-holder.svg" alt="placeholder">
+<div id="score-ctnt-wrap">
+    <div id="score-desc-wrap">
+        <p *ngFor="let x of employee_score">Take a Look at my FICO: <b>{{x.ficoScore}}</b></p>
     </div>
-    <div>
-        <img src="./assets/images/graph-holder.svg" alt="placeholder">
+
+    <div id="score-graph-wrap">
+        <div id="UW-Graph">
+            <ngx-gauge class="gauge-width"
+                [type]="gaugeType" 
+                [value]="UWGaugeVal"
+                [label]="UWLabel"  
+                [max]="max"
+                [min]="min"
+                [cap]="cap"
+                [thick]="thickness"
+                [size]="size"
+                [thresholds]="thresholdConfig">
+            </ngx-gauge>
+        </div>
+        <div id="FICO-Graph">
+            <ngx-gauge class="gauge-width"
+            [type]="gaugeType" 
+            [value]="FICOGaugeVal"
+            [label]="FICOLabel"  
+            [max]="max"
+            [min]="min"
+            [cap]="cap"
+            [size]="size"
+            [thick]="thickness"
+            [thresholds]="thresholdConfig">
+            </ngx-gauge>
+        </div>
     </div>
 </div>
 
-<ul *ngFor="let employee of employee_score">
+<!-- <ul *ngFor="let employee of employee_score">
     <li>Quote: {{employee.quote}}</li>
     <br>
     <li>UW Point: {{employee.uwPointNumer}}/{{employee.uwPointDenom}}</li>
     <br>
     <li>FICO: {{employee.ficoScore}}</li>
-</ul>
+</ul> -->
 
 

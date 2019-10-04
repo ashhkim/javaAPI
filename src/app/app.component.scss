@@ -60,6 +60,10 @@
        background-color:white;
        box-shadow: 0 1px 9px -2px rgba(161, 161, 161, .45);
   }
+
+  #nav-logo-redirect{
+      width: 15px;
+  }
   
   #real-nav-bar{
       display: flex;
@@ -94,28 +98,50 @@
       background-color:rgb(235, 232, 232);
   }
   
-  #logo-holder #real-logo{
-      width:75px;
-      height:75px;
-  }
+//   #logo-holder #real-logo{
+//       width:75px;
+//       height:75px;
+//   }
+
+ #logo-holder{
+     width:20%;
+     height: 100%;
+ }
+
+ #logo-holder #real-logo{
+     height: 100%;
+     width:100%;
+ }
+
+ #title-holder{
+    width: 80%;
+    height:100%;
+ }
   
   #nav-logo{
-      /* background:#fdf4f4; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       height:100%;
       border-right:.5px solid rgba(141, 141, 141, 0.5);
   }
   
   #logo-wrap-redirect{
+      width: 200px;
+
       display:flex;
       justify-content: center;
       align-items: center;
   
       flex-direction: row;
   
-      padding: 15px 20px;
+      padding: 10px 20px;
   }
   
+
   #logo-wrap-redirect p{
+
       text-align: center;
       font-size: 1.5rem;
       margin:0;

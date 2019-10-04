@@ -4,17 +4,16 @@ import { EmployeeService } from '../employee.service';
 @Component({
     selector: 'score',
     templateUrl: './score.component.html',
-    styles: [
-        'ul { list-style-type:none; }'  
-    ]
+    styleUrls: ['./score.component.scss']
 })
 
 export class ScoreComponent implements OnInit {
     
-    public employees = []
+    public employee_score = [];
     constructor(private _employeeService: EmployeeService){ }
     
     ngOnInit(){
-        this._employeeService.getScore().subscribe(data => this.employees = data);
+        this._employeeService.getScore().subscribe(data => { this.employee_score = data; console.log(data)});
+        // console.log(data);
     }
 }

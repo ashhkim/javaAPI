@@ -1,0 +1,21 @@
+ul{
+    list-style-type: none;
+    list-style:none;
+    margin:0;
+    padding:15px 20px;
+}
+
+p{
+    padding-left:20px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width:180px;
+    height:180px;
+}

@@ -176,7 +176,7 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
 
-      grid-gap: 40px;
+      grid-gap: 20px;
       padding: 15px;
   }
 
@@ -188,6 +188,12 @@
   #POC-Dash > .detail-box:nth-child(1){
     grid-column: span 1;
     grid-row: span 2;
+  }
+
+  .reading-label{
+      display:flex !important;
+      justify-content: center !important;
+      align-items: center !important;
   }
   
   .detail-box{
@@ -230,10 +236,9 @@
   }
 
   .title-wrap{
-      font-size: .65rem;
+      font-size: .9rem;
     //   text-transform: uppercase;
-      color: #12263f !important;
-      font-weight: 400;
+      color: #838f9c !important;
 
       width:100%;
     
@@ -242,6 +247,11 @@
     //   background-color: #858796;
 
       color: white;
+  }
+
+
+  .section-title{
+    font-weight: 600 !important;
   }
   
   #Dashboard-wrap{

@@ -10,6 +10,7 @@ import { EmploymentComponent } from './employment/employment.component';
 import { RiskAnalysisComponent } from './riskAnalysis/riskAnalysis.component';
 import { ScoreComponent } from './score/score.component';
 
+import { NgxGaugeModule } from 'ngx-gauge'
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ScoreComponent } from './score/score.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxGaugeModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

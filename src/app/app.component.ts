@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { ScoreComponent } from './score/score.component';
 import { EmployeeService } from './employee.service';
 
@@ -10,4 +10,9 @@ import { EmployeeService } from './employee.service';
 
 export class AppComponent {
   title = 'javaAPI';
+  title_active = false;
+
+  highlightThatShit(ele: ElementRef){
+    this.title_active = !this.title_active;
+  }
 }

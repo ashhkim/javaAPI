@@ -6,7 +6,7 @@
               <div id="logo-holder">
                   <img id ="real-logo" src="./assets/images/statue-of-liberty.svg">
               </div>
-              <div id="title-holder">
+              <div id="title-holder" [ngClass] = "{'titleActive' : title_active}" (click)="highlightThatShit()">
                   <p>Fiji Insurance</p>
               </div>
           </div>

@@ -8,3 +8,17 @@ body,html{
     background-color: #f3f5fa;
     font-family: "Roboto Condensed";
 }
+
+// global styles for all lists, as the only time lists appear
+// are inside our component, while listing out  details for each component.
+// the styles for each are the same, so might as well put them in global style sheet
+
+ul{
+    list-style-type:none;
+    padding:0px 25px;
+}
+
+li{ 
+   font-size: 1vw;
+   word-wrap: break-word;
+}

@@ -4,10 +4,7 @@ import { EmployeeService } from '../employee.service';
 @Component({
     selector: 'riskAnalysis',
     templateUrl: './riskAnalysis.component.html',
-    styles: [
-        'ul { list-style-type:none; }',
-        'li { font-size:100%; }'  
-    ]
+    styleUrls: ["riskAnalysis.component.scss"]
 })
 
 export class RiskAnalysisComponent implements OnInit {

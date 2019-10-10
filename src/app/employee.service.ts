@@ -5,30 +5,27 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class EmployeeService {
-    private apiKey : string = "32715";
-
-    private urlEmployee: string = "/InsAPI/rest/getcustomer/";
-    private urlEmployment: string = "/InsAPI/rest/getemployment/";
-    private urlRiskData: string = "/InsAPI/rest/getriskdata/";
-    private urlScore: string = "/InsAPI/rest/getquote/quote/";
+    private urlEmployee: string = "/assets/data/customer_personal.json";
+    private urlEmployment: string = "/assets/data/customer_employment.json";
+    private urlRiskData: string = "/assets/data/customer_riskdata.json";
+    private urlScore: string = "/assets/data/customer_quote.json";
     
     constructor(private http:HttpClient) { }
 
-    getRiskData(employeeID : string): Observable<IEmployee[]> {;
-        return this.http.get<IEmployee[]>(this.urlRiskData + `${this.apiKey}/${employeeID}`);
+    getEmployees(): Observable<IEmployee[]>{
+        return this.http.get<IEmployee[]>(this.urlEmployee);
     }
 
-    getEmployees(employeeID : string): Observable<IEmployee[]>{
-        return this.http.get<IEmployee[]>(this.urlEmployee + `${this.apiKey}/${employeeID}`);
+    getEmployment(): Observable<IEmployee[]>{
+        return this.http.get<IEmployee[]>(this.urlEmployment);
     }
 
-    getEmployment(employeeID : string): Observable<IEmployee[]>{
-        return this.http.get<IEmployee[]>(this.urlEmployment + `${this.apiKey}/${employeeID}`);
+    getRiskData(): Observable<IEmployee[]>{
+        return this.http.get<IEmployee[]>(this.urlRiskData);
     }
 
-
-    getScore(employeeID : string): Observable<IEmployee[]>{
-        return this.http.get<IEmployee[]>(this.urlScore + `${this.apiKey}/${employeeID}`);
+    getScore(): Observable<IEmployee[]>{
+        return this.http.get<IEmployee[]>(this.urlScore);
     }
 
     errorHandler(error: HttpErrorResponse){

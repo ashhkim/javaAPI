@@ -10,6 +10,7 @@ import { EmployeeService } from '../employee.service';
 
 export class ScoreComponent implements OnInit {
     public employee_score = [];
+    public user_id : string = "4";
     
     gaugeType = "full";
     UWGaugeVal = 0;
@@ -25,7 +26,7 @@ export class ScoreComponent implements OnInit {
     FICOmax = 850;
     FICOmin = 300;
 
-    UWmax = 10;
+    UWmax = 12;
     UWmin = 0;
     
     cap="round";
@@ -40,7 +41,7 @@ export class ScoreComponent implements OnInit {
     constructor(private _employeeService: EmployeeService){ }
     
     ngOnInit(){
-        this._employeeService.getScore().subscribe(data => { 
+        this._employeeService.getScore(this.user_id).subscribe(data => { 
             this.employee_score = data; 
             // this.FICOGaugeVal = this.employee_score[0].ficoScore;
             this.UWGaugeVal = this.employee_score[0].uwPointNumer;

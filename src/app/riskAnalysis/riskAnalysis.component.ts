@@ -10,9 +10,11 @@ import { EmployeeService } from '../employee.service';
 export class RiskAnalysisComponent implements OnInit {
     
     public employees = []
+    public user_id : string = "4";
+
     constructor(private _employeeService: EmployeeService){ }
     
     ngOnInit(){
-        this._employeeService.getRiskData().subscribe(data => this.employees = data);
+        this._employeeService.getRiskData(this.user_id).subscribe(data => this.employees = data);
     }
 }

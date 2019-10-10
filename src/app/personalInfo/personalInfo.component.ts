@@ -12,10 +12,12 @@ import { EmployeeService } from '../employee.service';
 export class personalInfoComponent implements OnInit {
     
     public employees = [];
+    public user_id : string = "4";
+
     constructor(private _employeeService: EmployeeService){ }
     
     ngOnInit(){
-        this._employeeService.getEmployees().subscribe(data => this.employees = data);
+        this._employeeService.getEmployees(this.user_id).subscribe(data => this.employees = data);
     }
 
     

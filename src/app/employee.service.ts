@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
 export class EmployeeService {
     private apiKey : string = "32715";
 
-    private urlEmployee: string = "/InsAPI/rest/getcustomer/";
-    private urlEmployment: string = "/InsAPI/rest/getemployment/";
-    private urlRiskData: string = "/InsAPI/rest/getriskdata/";
-    private urlScore: string = "/InsAPI/rest/getquote/quote/";
+    private urlEmployee: string = "/rest/getcustomer/";
+    private urlEmployment: string = "/rest/getemployment/";
+    private urlRiskData: string = "/rest/getriskdata/";
+    private urlScore: string = "/rest/getquote/quote/";
     
     constructor(private http:HttpClient) { }
 

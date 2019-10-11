@@ -1,7 +1,7 @@
 
   {
-    "/InsAPI":{
-    "target": "http://localhost:8080",
+    "/rest":{
+    "target": "http://insurancepocjavaapi10-env.gmdskuqqks.us-east-2.elasticbeanstalk.com/",
     "secure": false
     }
 }

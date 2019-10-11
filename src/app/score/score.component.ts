@@ -16,7 +16,7 @@ export class ScoreComponent implements OnInit {
     UWGaugeVal = 0;
     UWLabel = "UW Point";
 
-    FICOGaugeVal = 800;
+    FICOGaugeVal = 720;
     FICOLabel = "FICO";
 
     size= window.innerWidth / 7.5;

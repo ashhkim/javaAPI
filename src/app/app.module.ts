@@ -10,7 +10,10 @@ import { EmploymentComponent } from './employment/employment.component';
 import { RiskAnalysisComponent } from './riskAnalysis/riskAnalysis.component';
 import { ScoreComponent } from './score/score.component';
 
-import { NgxGaugeModule } from 'ngx-gauge'
+import { NgxGaugeModule } from 'ngx-gauge';
+import { CasePoolComponent } from './case-pool/case-pool.component';
+import { ToolsComponent } from './tools/tools.component';
+import { HomeDashboardComponent } from './home-dashboard/home-dashboard.component'
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { NgxGaugeModule } from 'ngx-gauge'
     personalInfoComponent,
     EmploymentComponent,
     RiskAnalysisComponent,
-    ScoreComponent
+    ScoreComponent,
+    CasePoolComponent,
+    ToolsComponent,
+    HomeDashboardComponent
   ],
   imports: [
     BrowserModule,

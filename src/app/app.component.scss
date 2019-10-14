@@ -52,8 +52,8 @@
       display: flex;
       flex-direction: row;
 
-      height:100%;
-      width:100%;
+      height:10vh;
+      width:100vw;
   
       justify-content: space-between;
   
@@ -96,6 +96,7 @@
   
   #real-nav-bar li:hover{
       background-color:rgb(235, 232, 232);
+      cursor: pointer;
   }
   
 //   #logo-holder #real-logo{
@@ -119,6 +120,9 @@
  }
   
   #nav-logo{
+      text-decoration: none;
+      color:black;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -158,6 +162,9 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      text-decoration: none;
+
   }
   
   .nav-link p{
@@ -174,6 +181,7 @@
       width:35px;
       height:35px;
   }
+
   
 //   @keyframes curtain {
 //     0% {
@@ -184,105 +192,5 @@
 //       grid-gap: 20px;
 //     }
 //   }
-  
-  #POC-Dash{
-    //   animation: 10s curtain cubic-bezier(.86,0,.07,1) 0.4s both;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
 
-      grid-gap: 30px;
-      padding: 20px;
-  }
-
-  #POC-Dash > .detail-box:nth-child(2){
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
-  #POC-Dash > .detail-box:nth-child(1){
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-
-  .reading-label{
-      display:flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-  }
-  
-  .detail-box{
-      border-radius: 3.5px;
-      display:flex;
-      flex-direction:column;
-      font-size:150%;
-      background-color: rgb(255, 255, 255);
-      box-shadow: 0 1px 9px -2px rgba(161, 161, 161, .45);;
-      color: rgb(102, 101, 101);
-  }
-//   #2196f3, #4caf50, #e53935, #fb8c00
-  .inner-detail-box{
-      display:flex;
-      flex-direction: column;
-
-      height:100%;
-    //   padding: 5px 15px;
-  }
-
-  .section-title{
-      margin:0;
-      padding:.75rem 1.25rem;
-  }
-
-  #risk-data-wrap .section-title{
-    border-bottom: 5.5px solid #2196f3 !important;
-  }
-
-  #score-data-wrap .section-title{
-    border-bottom: 5.5px solid #e53935 !important;
-  }
-
-  #personal-data-wrap .section-title{
-    border-bottom: 5.5px solid #4caf50 !important;
-  }
-
-  #employment-data-wrap .section-title{
-    border-bottom: 5.5px solid #fb8c00 !important;
-  }
-
-  .title-wrap{
-      font-size: 1rem;
-    //   text-transform: uppercase;
-      color: #838f9c !important;
-
-      width:100%;
-    
-      border-radius: 3.5px;
-
-    //   background-color: #858796;
-
-      color: white;
-  }
-
-  .risk-data-sect-details{
-    height:100%;
-    }
-
-  .section-title{
-    font-weight: 600 !important;
-  }
-  
-  #Dashboard-wrap{
-      height: 90%;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  #POC-Dash{
-      width: 70%;
-      height:90%;
-    //   height: 0%;
-  }
   

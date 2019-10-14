@@ -1,103 +1,46 @@
 <div id="total-page-wrap">
 <header>
   <div id="nav-bar">
-      <a id="nav-logo">
+      <a id="nav-logo" [routerLink] = "['/dashboard']">
           <div id="logo-wrap-redirect">
               <div id="logo-holder">
                   <img id ="real-logo" src="./assets/images/statue-of-liberty.svg">
               </div>
-              <div id="title-holder" [ngClass] = "{'titleActive' : title_active}" (click)="highlightThatShit()">
+              <div id="title-holder" [ngClass] = "{'titleActive' : title_active}">
                   <p>Fiji Insurance</p>
               </div>
           </div>
       </a>
       <ul id="real-nav-bar">
-          <li>
-              <a href="#" >
-                  <div class="nav-link">
-                      <div class="nav-link-img">
-                          <img class="nav-img-src" src="./assets/images/dashboard.svg">
-                      </div>
-                      <p>Dashboard</p>
-                  </div>
-              </a>
+          <li [routerLink] = "['/dashboard']">
+            <div class="nav-link">
+                <div class="nav-link-img">
+                    <img class="nav-img-src" src="./assets/images/dashboard.svg">
+                </div>
+                <p>Dashboard</p>
+            </div>
           </li>
-          <li>
-              <a href="#" >
-                  <div class="nav-link">
-                      <div class="nav-link-img">
-                          <img class="nav-img-src" src="./assets/images/case-study.svg">
-                      </div>
-                      <p>Case Pool</p>
-                  </div>
-              </a>
+          <li [routerLink] = "['/cases']">
+            <div class="nav-link">
+                <div class="nav-link-img">
+                    <img class="nav-img-src" src="./assets/images/case-study.svg">
+                </div>
+                <p>Case Pool</p>
+            </div>
           </li>
-          <li>
-              <a href="#" >
-                  <div class="nav-link">
-                      <div class="nav-link-img">
-                          <img class="nav-img-src" src="./assets/images/tools.svg">
-                      </div>
-                      <p>Toolz</p>
-                  </div>
-              </a>
+          <li [routerLink] = "['/tools']">
+            <div class="nav-link">
+                <div class="nav-link-img">
+                    <img class="nav-img-src" src="./assets/images/tools.svg">
+                </div>
+                <p>Toolz</p>
+            </div>
           </li>
       </ul>
   </div>
 </header>
 
-<div id="Dashboard-wrap">
-  <div id="POC-Dash">
-      <div class="detail-box">
-        <div id="risk-data-wrap" class="inner-detail-box">
-            <div class="title-wrap">
-                <h2 class="section-title">Risk Data</h2>
-                <!-- <p>Click on card for details</p> -->
-            </div>
+<router-outlet></router-outlet>
 
-            <div class="risk-data-sect-details">
-                <riskAnalysis></riskAnalysis>
-            </div> 
-
-        </div>
-      </div>
-
-      <div class="detail-box">
-        <div id="score-data-wrap" class="inner-detail-box">
-            <div class="title-wrap">
-                <h2 class="section-title">Score</h2>
-            </div>
-
-            <div class="risk-data-sect-details">
-              <score></score>      
-            </div>
-        </div>
-      </div>
-      <div class="detail-box">
-        <div id = "personal-data-wrap" class="inner-detail-box">
-            <div class="title-wrap">
-                <h2 class="section-title">Personal Data</h2>
-            </div>
-            
-            <div class="risk-data-sect-details">
-                <personalInfo></personalInfo>
-            </div>
-        </div>
-      </div>
-
-      <div class="detail-box">
-        <div id="employment-data-wrap" class="inner-detail-box">
-            <div class="title-wrap">
-                <h2 class="section-title">Employment</h2>
-            </div>
-
-            <div class="risk-data-sect-details">
-                <employment></employment>
-            </div>
-        </div>
-    </div>
-
-  </div>
-</div>
 </div>
 
